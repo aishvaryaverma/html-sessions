@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.4;
+}
+
+/* common */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+.clearfix {
+    clear: both;
+}
+a {
+    text-decoration: none;
+}
+
+/* banner */
+.banner {
+    min-height: 400px;
+    background: #05abe0;
+    background: -moz-linear-gradient(top,  #05abe0 0%, #53cbf1 60%, #87e0fd 100%);
+    background: -webkit-linear-gradient(top,  #05abe0 0%,#53cbf1 60%,#87e0fd 100%);
+    background: linear-gradient(to bottom,  #05abe0 0%,#53cbf1 60%,#87e0fd 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05abe0', endColorstr='#87e0fd',GradientType=0 );
+
+}
+.header {
+    clear: both;
+    padding: 20px 0;
+}
+.header .logo {
+    float: left;
+    width: 40%;
+}
+.header .logo img {
+    display: block;
+    max-height: 80px;
+}
+.header .menu {
+    width: 60%;
+    float: right;
+    margin-top: calc((80px - 45px) / 2);
+}
+.header .menu ul {
+    text-align: right;
+}
+.header .menu ul li {
+    position: relative;
+    display: inline-block;
+}
+.header .menu ul li a {
+    display: block;
+    font-size: 18px;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.header .menu ul li .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 180px;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.7);
+}
+.header .menu ul li .dropdown li {
+    display: block;
+    border-bottom: 1px solid #eee;
+}
+.header .menu ul li .dropdown li:last-child {
+    border-bottom: none;
+}
+.header .menu ul li .dropdown li a {
+    font-size: 14px;
+    color: #333;
+    border-radius: 0;
+}
+.header .menu ul li:hover a {
+    background: rgba(255, 255, 255, 0.4);
+}
+.header .menu ul li:hover .dropdown {
+    display: block;
+}
+.header .menu ul li:hover .dropdown li a {
+    background: none;
+}
+.header .menu ul li:hover .dropdown li:hover a {
+    background: white;
+}
